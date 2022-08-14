@@ -12,7 +12,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import App from "../components/App";
 
 const { chains, provider } = configureChains(
-  [chain.mainnet], // you can add more chains here like chain.mainnet, chain.optimism etc.
+  [chain[process.env.NEXT_PUBLIC_CHAIN]], // you can add more chains here like chain.mainnet, chain.optimism etc.
   [
     jsonRpcProvider({
       rpc: () => {
@@ -38,15 +38,15 @@ const wagmiClient = createClient({
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>swolidity</title>
         <meta name="description" content="swolidity" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <div className={styles.grid}>
+      <main>
+        <div>
           <ChakraProvider>
             <WagmiConfig client={wagmiClient}>
               <RainbowKitProvider chains={chains}>

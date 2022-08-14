@@ -17,8 +17,9 @@ import {
   NumberIncrementStepper,
   NumberDecrementStepper,
 } from "@chakra-ui/react";
+import Gm from "../components/Gm";
 
-const CONTRACT_ADDRESS = "0xC80DC97599c64288f13f5Bb5EA3106B77F3bcAe1";
+const CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS;
 
 const contractConfig = {
   addressOrName: CONTRACT_ADDRESS,
@@ -48,6 +49,7 @@ function App() {
 
   return (
     <Container paddingY="10">
+      <Gm />
       <ConnectButton />
 
       <NumberInput
@@ -75,7 +77,7 @@ function App() {
           bg: "blue.700",
         }}
       >
-        💪 Mint
+        Mint
       </Button>
     </Container>
   );
