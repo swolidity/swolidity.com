@@ -7,6 +7,7 @@ import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
 import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
 import { publicProvider } from "wagmi/providers/public";
+import { infuraProvider } from "wagmi/providers/infura";
 import { ChakraProvider } from "@chakra-ui/react";
 
 import App from "../components/App";
@@ -14,6 +15,7 @@ import App from "../components/App";
 const { chains, provider } = configureChains(
   [chain[process.env.NEXT_PUBLIC_CHAIN]], // you can add more chains here like chain.mainnet, chain.optimism etc.
   [
+    infuraProvider({ apiKey: "20bad75828264ed196cddf0e8a1721bb" }),
     jsonRpcProvider({
       rpc: () => {
         return {

@@ -18,6 +18,7 @@ import {
   NumberDecrementStepper,
 } from "@chakra-ui/react";
 import Gm from "../components/Gm";
+import { LiveMints } from "./LiveMints";
 
 const CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS;
 
@@ -79,6 +80,8 @@ function App() {
       >
         Mint
       </Button>
+
+      <LiveMints />
     </Container>
   );
 }
