@@ -42,8 +42,6 @@ if (typeof window === "undefined") {
       });
     });
 
-    console.log({ txn });
-
     return (
       <Box>
         <Divider orientation="horizontal" my={6} />
