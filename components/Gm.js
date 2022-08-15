@@ -8,9 +8,9 @@ export default function Gm() {
       </Heading>
 
       <Text mb={6}>
-        I'm tokenizing my life. swolDAO is a 1000 cap ERC721a collection that
-        grants you access to everything I am buidling in web3 along with the
-        following other benefits:
+        I&apos;m tokenizing my life. swolDAO is a 1000 cap ERC721a collection
+        that grants you access to everything I am buidling in web3 along with
+        the following other benefits:
       </Text>
 
       <List mb={6} spacing={3}>
