@@ -6,7 +6,7 @@ export default function Mints({ hash }) {
     hash,
   });
 
-  console.log({ data });
+  if (!data) return <Box></Box>;
 
   return <Box>{data.from} just minted</Box>;
 }
