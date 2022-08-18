@@ -32,6 +32,15 @@ export default function Gm() {
           for members to vote on how best to use. 1 NFT = 1 VOTE
         </ListItem>
       </List>
+
+      <Box mb={3}>
+        <Link
+          color="blue"
+          href="https://etherscan.io/address/0xc80dc97599c64288f13f5bb5ea3106b77f3bcae1"
+        >
+          0xc80dc97599c64288f13f5bb5ea3106b77f3bcae1
+        </Link>
+      </Box>
     </Box>
   );
 }
