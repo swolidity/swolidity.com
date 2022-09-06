@@ -16,7 +16,7 @@ export default function Gm() {
       <List mb={6} spacing={3}>
         <ListItem>
           Token Gated{" "}
-          <Link color="blue" href="https://discord.gg/uDgyQ4Ks">
+          <Link color="blue" href="https://discord.gg/4vpauWMbU9">
             Discord
           </Link>{" "}
           full of some of the best swolmies web3 has to offer
