@@ -23,11 +23,6 @@ export default function Gm() {
         </ListItem>
 
         <ListItem>
-          Free NFT contract launches (you pay contract creation gas cost and
-          swolDAO charges 5% of mint profits)
-        </ListItem>
-
-        <ListItem>
           5% of all my future profits will be put into the swolDAO gnosis safe
           for members to vote on how best to use. 1 NFT = 1 VOTE
         </ListItem>
